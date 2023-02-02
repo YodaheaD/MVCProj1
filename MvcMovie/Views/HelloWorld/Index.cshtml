@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>
+@{
+var greeting = "Welcome !";
+var weekDay = DateTime.Now.DayOfWeek;
+var greetingMessage = greeting + " Time is, " + weekDay;
+}
+<p>The greeting is: @greetingMessage</p>
